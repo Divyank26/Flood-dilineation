@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+
+myvenv/
+venv/
+
+classifier_best.pth
+unet_best.pth
+
+processed/
+sen1floods11_data/
+
+prediction_mask.png
+prediction_overlay.png
+
+.vscode/
+.idea/
