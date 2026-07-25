@@ -22,34 +22,8 @@ Dimensions    Originally 512×512       Generate binary flood labels
 Volume        4384 image-mask pairs    Store processed dataset
 
 System Architecture 
-  Sentinel-1 TIFF
-        │
-        ▼
-  Preprocessing
-        │
-        ▼
-CNN Flood Classifier
-        │
-  ┌─────┴─────┐
-  │           │
-No Flood    Flood
-  │           ▼
-  │    Attention U-Net
-  │           │
-  ▼           ▼
-Stop  Flood Segmentation
-              │
-              ▼
-       Flood Statistics
-              │
-              ▼
-      Severity Analysis
-              │
-              ▼
-   Recovery Recommendation
-              │
-              ▼
-    Streamlit Dashboard
+<img width="615" height="586" alt="Screenshot 2026-07-25 131524" src="https://github.com/user-attachments/assets/51f6f4c1-f72a-4c3b-8ca7-9126eec38abc" />
+
 
 Methodology
 1. Flood Presence Classification:
