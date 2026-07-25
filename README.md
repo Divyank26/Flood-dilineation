@@ -1,5 +1,137 @@
 # AI-Based Flood Mapping and Recovery Recommendation System using Sentinel-1 SAR Imagery
 
+# Repository Structure
+
+```text
+Flood-Mapping/
+│
+├── assets/
+├── datasets/
+├── inference/
+├── losses/
+├── models/
+├── reports/
+├── training/
+├── ui/
+│
+├── app.py
+├── config.py
+├── download_models.py
+├── classifier_temperature.txt
+├── requirements.txt
+├── README.md
+├── LICENSE
+└── .gitignore
+```
+
+---
+
+# Installation
+
+## 1. Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/Flood-Mapping.git
+
+cd Flood-Mapping
+```
+
+---
+
+## 2. Create Virtual Environment (Recommended)
+
+Windows
+
+```bash
+python -m venv venv
+
+venv\Scripts\activate
+```
+
+Linux / Mac
+
+```bash
+python3 -m venv venv
+
+source venv/bin/activate
+```
+
+---
+
+## 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# Download Pretrained Models
+
+The trained models are hosted separately because GitHub has file size limitations.
+
+Download the pretrained models automatically:
+
+```bash
+python download_models.py
+```
+
+Or manually download them from:
+
+**Google Drive**
+
+**Models Folder**
+
+Unet
+```
+https://drive.google.com/file/d/11lrWuX8YM7UoiMUMsWGNCFwt9OL0T9RR/view?usp=sharing
+
+```
+Classifier
+```
+https://drive.google.com/file/d/1kc2deY1dU2TEopdSUGcRL2lR47tlFkdp/view?usp=sharing
+```
+
+
+# Run the Application
+
+```bash
+streamlit run app.py
+```
+
+The application will open automatically in your browser.
+
+---
+
+# Input
+
+Upload any Sentinel-1 GeoTIFF containing
+
+- VV Band
+- VH Band
+
+Supported formats
+
+```
+.tif
+
+.tiff
+```
+
+---
+
+# Output
+
+The application provides
+
+- Flood Presence Confidence
+- Flood Segmentation Mask
+- Flood Overlay
+- Flood Area
+- Flood Coverage
+- Flood Severity
+- Recovery Recommendations
+
 ## Abstract
 Floods are among the most destructive natural disasters worldwide. Traditional flood mapping methods are time-consuming and heavily weather-dependent. Sentinel-1 Synthetic Aperture Radar (SAR) imagery overcomes this by enabling continuous flood monitoring regardless of cloud cover or lighting conditions. This project develops a two-stage AI pipeline featuring a CNN-based Flood Presence Classifier and an Attention U-Net Flood Segmentation model. The system integrates flood statistics, severity estimation, and recovery recommendations, all deployed through an interactive Streamlit web application.
 
