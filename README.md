@@ -22,7 +22,8 @@ Dimensions    Originally 512×512       Generate binary flood labels
 Volume        4384 image-mask pairs    Store processed dataset
 
 System Architecture 
-<img width="615" height="586" alt="Screenshot 2026-07-25 131524" src="https://github.com/user-attachments/assets/51f6f4c1-f72a-4c3b-8ca7-9126eec38abc" />
+<img width="558" height="527" alt="Screenshot 2026-07-25 140712" src="https://github.com/user-attachments/assets/06327831-8596-493c-b7ee-f40856d76119" />
+
 
 
 Methodology
