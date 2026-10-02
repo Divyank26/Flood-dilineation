@@ -31,7 +31,7 @@ Flood-Mapping/
 ## 1. Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Flood-Mapping.git
+git clone https://github.com/Divyank26/Flood-Mapping.git
 
 cd Flood-Mapping
 ```
