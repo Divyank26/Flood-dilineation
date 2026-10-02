@@ -31,7 +31,7 @@ Flood-Mapping/
 ## 1. Clone Repository
 
 ```bash
-git clone https://github.com/Divyank26/Flood-Mapping.git
+git clone [https://github.com/Divyank26/Flood-Mapping.git](https://github.com/Divyank26/Flood-dilineation.git)
 
 cd Flood-Mapping
 ```
